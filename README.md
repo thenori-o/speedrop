@@ -19,4 +19,4 @@ Speedrop is a delivery application that connects clients to couriers, enabling f
 Contributions are welcome! Feel free to open a pull request or report issues.
 
 ## License
-This project is licensed under the MIT License - see the [[LICENSE](LICENSE)](https://github.com/thenori-o/speedrop/tree/main?tab=MIT-1-ov-file) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/thenori-o/speedrop/tree/main?tab=MIT-1-ov-file) file for details.
