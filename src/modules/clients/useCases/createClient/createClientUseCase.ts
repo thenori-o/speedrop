@@ -9,7 +9,7 @@ interface CreateClient {
 export class CreateClientUseCase {
 
   async execute({username, password}: CreateClient) {
-    const clientExists = await prisma.client.findFirst({
+    const client = await prisma.client.findFirst({
       where: {
         username: {
           equals: username.toLowerCase(),
@@ -17,19 +17,19 @@ export class CreateClientUseCase {
       }
     });
 
-    if (clientExists)
+    if (client)
       throw new Error('Client already exists');
 
     const hashPassword = await hash(password, 10)
 
-    const client = await prisma.client.create({
+    const result = await prisma.client.create({
       data: {
         username,
         password: hashPassword
       }
     });
 
-    return client;
+    return result;
   }
 
 }
