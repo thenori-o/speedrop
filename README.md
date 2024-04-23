@@ -5,7 +5,11 @@ Speedrop is a delivery application that connects clients to couriers, enabling f
 ## Technologies Used
 - Node.js
 - Express.js
+- Typescript
 - Prisma
+- ts-node-dev
+- JsonWebToken
+- Bcrypt
 
 ## Setup
 1. Clone the repository: `git clone https://github.com/your-username/speedrop.git`
