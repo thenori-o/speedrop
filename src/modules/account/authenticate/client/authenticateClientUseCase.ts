@@ -1,5 +1,5 @@
 import { compare } from "bcrypt";
-import { prisma } from "../../../database/PrismaClient";
+import { prisma } from "../../../../database/PrismaClient";
 import { sign } from "jsonwebtoken";
 
 interface IAuthenticateClient {
